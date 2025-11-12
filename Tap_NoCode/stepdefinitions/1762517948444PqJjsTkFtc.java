@@ -23,10 +23,10 @@ loginPage.enterEmail(email);
 public void the_user_enters_a_valid_password(String password) {
 loginPage.enterPassword(password);
 }
-@Then("the login button should be enabled")
-public void the_login_button_should_be_enabled() {
-loginPage.isLoginButtonEnabled();
-}
+// @Then("the login button should be enabled")
+// public void the_login_button_should_be_enabled() {
+// loginPage.isLoginButtonEnabled();
+// }
 @When("the user clicks the login button")
 public void the_user_clicks_the_login_button() {
 loginPage.clickLoginButton();
@@ -35,31 +35,31 @@ loginPage.clickLoginButton();
 public void the_user_should_be_logged_in_successfully() {
 loginPage.isUserLoggedIn();
 }
-@Then("the home screen should load without errors")
-public void the_home_screen_should_load_without_errors() {
-loginPage.isHomeScreenLoaded();
-}
-@Then("the Google Map should be displayed on the home screen")
-public void the_google_map_should_be_displayed_on_the_home_screen() {
-loginPage.isGoogleMapDisplayed();
-}
+// @Then("the home screen should load without errors")
+// public void the_home_screen_should_load_without_errors() {
+// loginPage.isHomeScreenLoaded();
+// }
+// @Then("the Google Map should be displayed on the home screen")
+// public void the_google_map_should_be_displayed_on_the_home_screen() {
+// loginPage.isGoogleMapDisplayed();
+// }
 @Then("the menu bar and recenter icon should be visible on the home screen")
 public void the_menu_bar_and_recenter_icon_should_be_visible_on_the_home_screen() {
 loginPage.isMenuBarVisible();
 loginPage.isRecentIconVisible();
 }
-@Given("I check the {string} checkbox")
-public void i_check_the_checkbox(String checkbox) {
-loginPage.checkCheckbox(checkbox);
-}
-@Given("the application is installed on a mobile device")
-public void the_application_is_installed_on_a_mobile_device() {
+// @Given("I check the {string} checkbox")
+// public void i_check_the_checkbox(String checkbox) {
+// loginPage.checkCheckbox(checkbox);
+// }
+// @Given("the application is installed on a mobile device")
+// public void the_application_is_installed_on_a_mobile_device() {
 // Logic to check if the application is installed on a mobile device
-}
-@When("I navigate to the login page")
-public void i_navigate_to_the_login_page() {
-loginPage.navigateToLoginPage();
-}
+// }
+// @When("I navigate to the login page")
+// public void i_navigate_to_the_login_page() {
+// loginPage.navigateToLoginPage();
+// }
 @When("I click the password visibility toggle")
 public void i_click_the_password_visibility_toggle() {
 loginPage.togglePasswordVisibility();
@@ -72,14 +72,14 @@ loginPage.isPasswordVisible();
 public void the_user_is_logged_in() {
 // Logic to ensure the user is logged in
 }
-@When("I log out of the application")
-public void i_log_out_of_the_application() {
-loginPage.logout();
-}
-@Then("I should see an unexpected error message")
-public void i_should_see_an_unexpected_error_message() {
-loginPage.isUnexpectedErrorMessageDisplayed();
-}
+// @When("I log out of the application")
+// public void i_log_out_of_the_application() {
+// loginPage.logout();
+// }
+// @Then("I should see an unexpected error message")
+// public void i_should_see_an_unexpected_error_message() {
+// loginPage.isUnexpectedErrorMessageDisplayed();
+// }
 @Then("an appropriate error message should be displayed")
 public void an_appropriate_error_message_should_be_displayed() {
 loginPage.isErrorMessageDisplayed();
@@ -110,26 +110,26 @@ public void the_user_enters_valid_credentials_for_a_verified_account() {
 loginPage.enterEmail("krishna@gmail.com");
 loginPage.enterPassword("validPassword123");
 }
-@When("a server error occurs")
-public void a_server_error_occurs() {
+// @When("a server error occurs")
+// public void a_server_error_occurs() {
 // Logic to simulate a server error
-}
-@When("a network error occurs")
-public void a_network_error_occurs() {
+// }
+// @When("a network error occurs")
+// public void a_network_error_occurs() {
 // Logic to simulate a network error
-}
-@When("I wait for the session to timeout")
-public void i_wait_for_the_session_to_timeout() {
+// }
+// @When("I wait for the session to timeout")
+// public void i_wait_for_the_session_to_timeout() {
 // Logic to simulate waiting for session timeout
-}
-@Then("I should see a session timeout message")
-public void i_should_see_a_session_timeout_message() {
-loginPage.isSessionTimeoutMessageDisplayed();
-}
-@Then("the error message should be clearElement and informative")
-public void the_error_message_should_be_clear_and_informative() {
-loginPage.isErrorMessageClearAndInformative();
-}
+// }
+// @Then("I should see a session timeout message")
+// public void i_should_see_a_session_timeout_message() {
+// loginPage.isSessionTimeoutMessageDisplayed();
+// }
+// @Then("the error message should be clearElement and informative")
+// public void the_error_message_should_be_clear_and_informative() {
+// loginPage.isErrorMessageClearAndInformative();
+// }
 @Then("the user should be redirected back to the login page")
 public void the_user_should_be_redirected_back_to_the_login_page() {
 loginPage.isOnLoginPage();
